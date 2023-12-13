@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="680,2820" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Real Estate Bot" sap:VirtualizedContainerService.HintSize="546,1843" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="vMinSup">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="80" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="vStrDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Found department for buy" sap:VirtualizedContainerService.HintSize="530,2440" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="faf16948-233f-42c7-a16b-aadacba49aba" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2223" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alquilar'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" CvTextArea="364, 246, 59, 17" CvTextArgument="Alquilar" CvType="Text" DesignTimeRectangle="351, 231, 106, 48" DesignTimeScaleFactor="1" FriendlyName="'Alquilar'" FullSelectorArgument="&lt;webctrl aaname='Alquilar' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Alquilar' parentid='root' tag='DIV' type='' class='sc-l2lttx-1 cMYHqa' check:innerText='Alquilar' /&gt;" Guid="3e12aa99-6b34-4337-be43-3a6d6fde2cd7" InformativeScreenshot="f4ec28920e9e92594da3de2df2ed94d2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Comprar'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" CvTextArea="386, 349, 54, 15" CvTextArgument="Comprar" CvType="Text" DesignTimeRectangle="380, 349, 60, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Comprar'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='sc-c7r5qj-8 MAyrk' tag='P' aaname='Comprar' check:innerText='Comprar' /&gt;" Guid="4bf43513-317b-46b9-aa0c-7d3d327a1ad2" InformativeScreenshot="8479a4958a02d092c99ea69fdba94251.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="364, 246, 58, 17" CvTextArgument="Alquilar" CvType="Text" DesignTimeRectangle="351, 231, 106, 48" FriendlyName="'Alquilar'" FullSelectorArgument="&lt;webctrl aaname='Alquilar' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Alquilar' parentid='root' tag='DIV' type='' class='sc-l2lttx-1 flmOjw' check:innerText='Alquilar' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Departamento'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-venta-rosario.html" CvTextArea="483, 194, 94, 17" CvTextArgument="Departame..." CvType="Text" DesignTimeRectangle="470, 179, 150, 48" DesignTimeScaleFactor="1" FriendlyName="'Departamento'" FullSelectorArgument="&lt;webctrl aaname='Departamento' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Departamento' parentid='root' tag='DIV' type='' class='sc-l2lttx-1 cMYHqa' check:innerText='Departamento' /&gt;" Guid="cf767cb6-bdb3-4574-a7be-0d5f47e50c24" InformativeScreenshot="957d50c12803f189cc68fde33d523616.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en venta en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Casa'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" CvTextArea="500, 385, 30, 12" CvTextArgument="Casa" CvType="Text" DesignTimeRectangle="507, 333, 28, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Casa'" FullSelectorArgument="&lt;webctrl aaname='Casa' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Casa' tag='SPAN' type='' class='sc-8wryax-4 kNoVMK' check:innerText='Casa' /&gt;" Guid="77f809eb-5148-49a5-a807-b03aef91928a" InformativeScreenshot="57a8517bf2fecbb01458c30fd53926b6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="476, 381, 20, 20" CvType="CheckBox" DesignTimeRectangle="482, 330, 20, 20" ElementType="CheckBox" FriendlyName="'Checkbox'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Más filtros'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" CvTextArea="909, 246, 76, 14" CvTextArgument="Mas filtros" CvType="Text" DesignTimeRectangle="871, 231, 126, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Más filtros'" FullSelectorArgument="&lt;webctrl aaname='Más filtros' parentid='root' tag='DIV' /&gt;" FuzzyAccuracy="0.6" FuzzySelectorArgument="&lt;webctrl aaname='Más filtros' parentid='root' tag='DIV' type='' class='sc-1t7lunp-1 ifqPvU' check:innerText='Más filtros' /&gt;" Guid="3f16508a-7afb-4d56-833e-4ddb8f2a238b" InformativeScreenshot="b665a2a03a5283fcc8f9ca2761a354d2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Desde'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Text="[vMinSup.ToString]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" CvElementArea="638, 305, 158, 51" CvType="InputBox" DesignTimeRectangle="640, 306, 156, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-Superficie-…'" FullSelectorArgument="&lt;webctrl id='input-Superficie-min' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-Superficie-min' tag='INPUT' type='tel' class='sc-bsp0cd-0 IXoEe' aaname='Desde' /&gt;" Guid="58eae1fb-3fbc-4604-9be4-ed4e5e561c34" InformativeScreenshot="079e7edfc742ed986729bc3ae4a06da5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="638, 305, 158, 51" CvType="InputBox" DesignTimeRectangle="652, 323, 38, 14" ElementType="Text" FriendlyName="'Desde'" FullSelectorArgument="&lt;webctrl aaname='Desde' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Desde' tag='LABEL' type='' class='sc-x5w4q3-0 eFkeqJ' check:innerText='Desde' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dueño directo'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/casas-departamentos-venta-rosario-mas-80-m2-cubiertos-dueno-directo.html" DesignTimeRectangle="578, 459, 94, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Dueño directo'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='sc-c7r5qj-8 MAyrk' tag='P' aaname='Dueño directo' check:innerText='Dueño directo' /&gt;" Guid="a59dbaa9-999c-4bd3-9da5-ccda2d8d1dc6" InformativeScreenshot="b25d606216c47bd906e9e70ae84a8925.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Casas o Departamentos en venta en Rosario, Santa Fe, Dueño directo - Zonaprop' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="560, 334, 119, 28" ElementType="Text" FriendlyName="'Tipo de anunciante'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h5' idx='4' tag='H5' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='sc-lq3xal-2 cFnkzf' tag='H5' aaname='Tipo de anunciante' check:innerText='Tipo de anunciante' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ver resultados'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" CvElementArea="848, 638, 136, 43" CvTextArea="866, 650, 102, 14" CvTextArgument="Ver resultados" CvType="Button" DesignTimeRectangle="850, 640, 134, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Ver resultados'" FullSelectorArgument="&lt;webctrl aaname='Ver resultados' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ver resultados' tag='BUTTON' type='' class='sc-1t7lunp-10 gQfxYX' check:innerText='Ver resultados' /&gt;" Guid="697cbed6-2760-4693-9e97-d57bf758f33a" InformativeScreenshot="74b2af4c28053261b15e12fce3ab863b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Address' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Url' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Area' ReferenceName='Column4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Price' ReferenceName='Column5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="faf16948-233f-42c7-a16b-aadacba49aba" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zonaprop.com.ar/casas-departamentos-venta-rosario-mas-80-m2-cubiertos-pagina-3-dueno-directo.html" DesignTimeRectangle="53, 343, 1260, 4154" DesignTimeScaleFactor="1" FriendlyName="'$ 20.000Forest'" FullSelectorArgument="&lt;webctrl class='postings-container' parentid='root' tag='DIV' /&gt;" Guid="fb42f129-31f4-44fa-a3c7-2e49c7073c92" InformativeScreenshot="a7d3839392995146102a003e9c33666a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Casas o Departamentos en venta en Rosario, Santa Fe, Dueño directo - Pagina 3 - Zonaprop' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+            <ui:OutputDataTable Text="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" />
+            <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Semicolon" DisplayName="Write CSV" FilePath="RealEstate.csv" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 784" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="65927f6eeb356666fe13a520594e6991.jpg" Selector="&lt;html app='chrome.exe' title='Departamentos en alquiler en Rosario, Santa Fe - Zonaprop' /&gt;" Title="Departamentos en alquiler en Rosario, Santa Fe - Zonaprop" Url="https://www.zonaprop.com.ar/departamentos-alquiler-rosario.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
