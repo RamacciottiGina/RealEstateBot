@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "vCity&Sequence_1",
         "vStrDT&Sequence_1",
         "ExtractDataTable&Sequence_1",
         "vMinSup&Sequence_1"
